@@ -15,8 +15,7 @@ fetch (`https://rws-cards-api.herokuapp.com/api/v1/cards/ar${tarotCardNum}`)
         console.log (data)
         document.querySelector('h2').innerText=data.card.name
         document.querySelector('h3').innerText=data.card.meaning_up
-        document.querySelector('img').src= `/madeleinebelanger.github.io/Tarot API/Tarot Illustration _ for pins. copy/${tarotCardNum}.png`
-            
+        document.querySelector('img').src=   `https://github.com/madeleinebelanger/madeleinebelanger.github.io/blob/main/Tarot%20API/Tarot%20Illustration%20_%20for%20pins.%20%20copy/${tarotCardNum}.png?raw=true`
 
     })
     .catch (err=> {
